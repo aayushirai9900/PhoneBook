@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body style="background-color:rgb(99, 183, 238)">
+    <div class="container">
+        <h2>Enter updated Data !</h2>
+    </div><br><br>
+
+    <div class="container">
+        <form action="/update/{{abc.sno}}" method="POST">
+        <div class="mb-3">
+            <h6><label for="formGroupExampleInput" class="form-label">Name</label></h6>
+            <input style="border-color: black;" type="text" class="form-control" name="person_name" value="{{abc.name}}" id="formGroupExampleInput" >
+        </div>
+        <div class="mb-3">
+            <h6><label for="formGroupExampleInput" class="form-label">Phone Number</label></h6>
+            <input style="border-color: black;"type="text" class="form-control" name="person_number" value="{{abc.number}}" id="formGroupExampleInput" >
+        </div>
+            <!--<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">-->
+        
+        <div class="col-12">
+            <button class="btn btn-dark btn-sm mx-1">UPDATE</button>
+        </div>
+        </form>
